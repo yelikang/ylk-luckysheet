@@ -918,6 +918,7 @@ const sheetHTML =
         '<div class="luckysheet-cols-menu luckysheet-rightgclick-menu luckysheet-mousedown-cancel" id="luckysheet-sheet-list">${item}</div>',
     sheetselectlistitemHTML =
         '<div class="luckysheet-cols-menuitem luckysheet-mousedown-cancel"  id="luckysheet-sheet-btn${index}" data-index="${index}"><div class="luckysheet-cols-menuitem-content luckysheet-mousedown-cancel" style="${style}" ><span class="icon luckysheet-mousedown-cancel">${icon}</span>${name}</div></div>',
+    // 文本编辑框，设置为contenteditable
     inputHTML =
         '<div dir="ltr"><div class="luckysheet-input-box-index" id="luckysheet-input-box-index"></div><div id="luckysheet-input-box" spellcheck="false" aria-hidden="false" class="luckysheet-input-box"><div class="luckysheet-cell-input editable" tabindex="0" role="combobox" contenteditable="true" id="luckysheet-rich-text-editor" dir="ltr" g_editable="true" aria-autocomplete="list"></div></div></div>',
     modelHTML =

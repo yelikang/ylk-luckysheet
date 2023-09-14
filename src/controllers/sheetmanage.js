@@ -900,7 +900,7 @@ const sheetmanage = {
         }
 
         // Store.flowdata = data;
-
+        // 渲染sheet dom
         luckysheetcreatedom(colwidth, rowheight, data, menu, title);
 
         setTimeout(function() {

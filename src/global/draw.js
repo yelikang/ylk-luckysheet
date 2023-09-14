@@ -381,6 +381,7 @@ function luckysheetDrawgridColumnTitle(scrollWidth, drawWidth, offsetLeft) {
     luckysheetTableContent.restore();
 }
 
+// 绘制canvas
 function luckysheetDrawMain(
     scrollWidth,
     scrollHeight,
@@ -590,6 +591,7 @@ function luckysheetDrawMain(
 
                         if (margeMain == null) {
                             mergeCache[key] = cellupdate.length;
+                            
                             cellupdate.push({
                                 r: r,
                                 c: c,
@@ -624,7 +626,7 @@ function luckysheetDrawMain(
                 //     "end_c": cellsize[2]
                 // }, sheetFile,luckysheetTableContent)){ continue; }
             }
-
+            // 记录每个单元格的位置信息
             cellupdate.push({
                 r: r,
                 c: c,
@@ -664,7 +666,8 @@ function luckysheetDrawMain(
     );
 
     let mcArr = [];
-
+    
+    // 循环渲染每个单元格的信息
     for (let cud = 0; cud < cellupdate.length; cud++) {
         let item = cellupdate[cud];
         let r = item.r,
@@ -758,7 +761,7 @@ function luckysheetDrawMain(
                     //动态数组公式
                     value = dynamicArray_compute[r + "_" + c].v;
                 }
-
+                // 渲染每个单元格的信息
                 cellRender(
                     r,
                     c,
@@ -1293,7 +1296,7 @@ let nullCellRender = function(
     ) {
         return;
     }
-
+    // 挨个渲染单元格
     luckysheetTableContent.fillRect(cellsize[0], cellsize[1], cellsize[2], cellsize[3]);
 
     if (r + "_" + c in dynamicArray_compute) {
@@ -2211,6 +2214,7 @@ function cellOverflow_colIn(map, r, c, col_st, col_ed) {
     };
 }
 
+// canvas文本渲染
 function cellTextRender(textInfo, ctx, option) {
     if (textInfo == null) {
         return;

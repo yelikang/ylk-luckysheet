@@ -223,6 +223,7 @@ export function luckysheetupdateCell(row_index1, col_index1, d, cover, isnotfocu
     }
     else{
         value = formula.ltGtSignDeal(value);
+        // 编辑框赋值
         $("#luckysheet-rich-text-editor").html(value);
         if (!isnotfocus) {
             luckysheetRangeLast($("#luckysheet-rich-text-editor")[0]);

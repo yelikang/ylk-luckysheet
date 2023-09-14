@@ -11,8 +11,9 @@ const Store = {
     calculateSheetIndex: 0,
 	flowdata: [],
     config: {},
-
+    // 可访问数据，行定位信息，行高(20/40)
     visibledatarow: [],
+    // 可访问数据，列定位信息，列宽(74、148...)
     visibledatacolumn: [],
     ch_width: 0,
     rh_height: 0,
@@ -29,7 +30,9 @@ const Store = {
     statisticBarHeight: 23,
     luckysheetTableContentHW: [0, 0], 
 
+    // 默认列宽
     defaultcollen: 73,
+    // 默认行高
     defaultrowlen: 19,
 
     jfcountfuncTimeout: null, 
@@ -121,7 +124,7 @@ const Store = {
     measureTextCellInfoCache:{},
     measureTextCacheTimeOut:null,
     cellOverflowMapCache:{},
-
+    // 缩放比
     zoomRatio:1,
 
     visibledatacolumn_unique:null,
