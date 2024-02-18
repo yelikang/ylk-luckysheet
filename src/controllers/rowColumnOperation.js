@@ -399,6 +399,7 @@ export function rowColumnOperationInitial() {
             }, 101);
         })
         .mousemove(function(event) {
+            // 行头，鼠标移入，行拖拽定位
             if (
                 Store.luckysheet_rows_selected_status ||
                 Store.luckysheet_rows_change_size ||
@@ -934,6 +935,7 @@ export function rowColumnOperationInitial() {
             event.stopPropagation();
         })
         .mousemove(function(event) {
+            // 列头，鼠标移入，行拖拽定位
             if (Store.luckysheet_cols_selected_status || Store.luckysheet_select_status) {
                 $("#luckysheet-cols-h-hover").hide();
                 $("#luckysheet-cols-menu-btn").hide();
