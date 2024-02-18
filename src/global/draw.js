@@ -20,6 +20,7 @@ import Store from "../store";
 import locale from "../locale/locale";
 import sheetmanage from "../controllers/sheetmanage";
 
+// 绘制行头信息
 function luckysheetDrawgridRowTitle(scrollHeight, drawHeight, offsetTop) {
     if (scrollHeight == null) {
         scrollHeight = $("#luckysheet-cell-main").scrollTop();
@@ -204,6 +205,7 @@ function luckysheetDrawgridRowTitle(scrollHeight, drawHeight, offsetTop) {
     luckysheetTableContent.restore();
 }
 
+// 绘制列头信息
 function luckysheetDrawgridColumnTitle(scrollWidth, drawWidth, offsetLeft) {
     if (scrollWidth == null) {
         scrollWidth = $("#luckysheet-cell-main").scrollLeft();
