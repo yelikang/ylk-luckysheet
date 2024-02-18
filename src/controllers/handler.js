@@ -255,7 +255,7 @@ export default function luckysheetHandler() {
         .mousewheel(function(event, delta) {
             event.preventDefault();
         });
-
+    // 滚动条监听
     $("#luckysheet-scrollbar-y")
         .scroll(function() {
             // setTimeout(function(){

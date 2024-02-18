@@ -458,7 +458,7 @@ function luckysheetDrawMain(
 
     //表格渲染区域 起止行列下标
     let dataset_row_st, dataset_row_ed, dataset_col_st, dataset_col_ed;
-
+    // 计算起始行、结束行
     dataset_row_st = luckysheet_searcharray(Store.visibledatarow, scrollHeight);
     dataset_row_ed = luckysheet_searcharray(Store.visibledatarow, scrollHeight + drawHeight);
 
