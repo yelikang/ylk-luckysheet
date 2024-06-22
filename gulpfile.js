@@ -225,7 +225,7 @@ async function core() {
         minify: production,
         banner: { js: banner },
         target: ['es2015'],
-        sourcemap: true,
+        sourcemap: 'both',
         outfile: 'dist/luckysheet.umd.js',
       })
 }

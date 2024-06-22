@@ -4034,6 +4034,7 @@ const luckysheetformula = {
         // });
         return this.functionParser(txt);
     },
+    // 公式解析
     functionParser: function(txt, cellRangeFunction) {
         let _this = this;
 
@@ -4101,6 +4102,7 @@ const luckysheetformula = {
             let s = funcstack[i];
 
             if (s == "(" && matchConfig.squote == 0 && matchConfig.dquote == 0 && matchConfig.braces == 0) {
+                console.log('====== 1')
                 if (str.length > 0 && bracket.length == 0) {
                     str = str.toUpperCase();
                     if (str.indexOf(":") > -1) {
@@ -4121,6 +4123,8 @@ const luckysheetformula = {
                     bracket.push(0);
                     str = "";
                 } else {
+                console.log('====== 2')
+
                     bracket.push(0);
                     str += s;
                 }
