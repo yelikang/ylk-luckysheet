@@ -1282,7 +1282,8 @@ const luckysheetlodingHTML = function(target, coverConfig) {
     loading.id = id;
     loading.className = "luckysheet-loading-mask " + config.customClass;
     $(loading).html(loadingHtml);
-    $(target).append(loading);
+    // 因此loading图标，看清楚canvas绘制过程
+    // $(target).append(loading);
 
     function show() {
         if (id) {
